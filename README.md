@@ -26,6 +26,8 @@ look weird and uncanny.
 
 ## Unity 
 
+2022.3.4f1
+
 Unity project containing the prefab and templates. 
 
 Currently (last update Sep 7th) the project is a blank URP project containing only the model, no animation and interaction has 
