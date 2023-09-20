@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 3
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.25
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.083333336
     manualTileSize: 0
     tileSize: 256
     buildHeightMesh: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: a5b61a37e6ad9a64fabf2023857fe9f6, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +260,33 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &1115510535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7228182113611106584, guid: 7b46f8917948bb248a2fd0e6ff979699, type: 3}
+  m_PrefabInstance: {fileID: 1338160294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1115510539
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115510535}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8342159127421523248, guid: 635562915501e834baa1f2c2dfe6df17, type: 3}
 --- !u!1001 &1338160294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -319,7 +346,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7228182113611106584, guid: 7b46f8917948bb248a2fd0e6ff979699, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1115510539}
   m_SourcePrefab: {fileID: 100100000, guid: 7b46f8917948bb248a2fd0e6ff979699, type: 3}
 --- !u!1001 &1399398613
 PrefabInstance:
@@ -329,9 +359,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2410199068032761572, guid: f8dad892704fa4f41b199d8bcc384d90, type: 3}
+      propertyPath: _turnMethod
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3989579357898420764, guid: f8dad892704fa4f41b199d8bcc384d90, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989579357898420764, guid: f8dad892704fa4f41b199d8bcc384d90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989579357898420764, guid: f8dad892704fa4f41b199d8bcc384d90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989579357898420764, guid: f8dad892704fa4f41b199d8bcc384d90, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3989579357898420764, guid: f8dad892704fa4f41b199d8bcc384d90, type: 3}
       propertyPath: m_LocalPosition.x
