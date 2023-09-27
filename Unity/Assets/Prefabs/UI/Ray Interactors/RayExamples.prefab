@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6768401860684504898}
   - component: {fileID: 6768401860684504899}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: RayExamples
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
